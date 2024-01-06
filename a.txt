@@ -1,1 +1,17 @@
-asdfghjkl
+import java.util.Arrays;
+import java.util.List;
+
+public class RestAuthentication {
+	public static void main(String[] args) {
+		String tokens[]= {"asd1","34fr","a2r3r"};
+		List<List<String>> urls[]= Arrays.asList({"POST","https://example.com/?token=asd1&csrf=a79i43&id=232rf&name=sam"}),Arrays.asList({
+			"GET","https://example.com/?token=asd1&id=232rf&name=sam"}};
+		getResponses(Arrays.asList(tokens),Arrays.asList(urls));
+	}
+
+	private static void getResponses(List<String> asList, List<List<String>> asList2) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}
