@@ -1,3 +1,118 @@
+########################################################################################################
+package java8;
+
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.util.List;
+
+public class FileOpee {
+
+	public static void main(String[] args) {
+		List<String> ids = List.of("ID1", "ID2", "ID3", "ID4", "ID5");
+
+        // File path where the text file will be created
+        String filePath = "unknown_contacts.txt";
+
+        // Call the method to write IDs to the file
+        File file=new File(filePath);
+        
+        writeIdsToFile(ids, file);
+//        file.delete();
+    }
+
+    public static void writeIdsToFile(List<String> ids, File filePath) {
+        try (BufferedWriter writer = new BufferedWriter(new FileWriter(filePath))) {
+            for (String id : ids) {
+                writer.write(id);
+                writer.newLine(); // Add a new line after each ID
+            }
+            System.out.println("IDs have been written to the file: " + filePath);
+        } catch (IOException e) {
+            System.err.println("An error occurred while writing to the file: " + e.getMessage());
+        }
+    }
+	
+
+}
+
+########################################################################################################
+
+import jakarta.mail.*;
+import jakarta.mail.internet.*;
+import java.util.Properties;
+import java.io.File;
+
+public class SendEmailWithAttachment {
+    public static void main(String[] args) {
+        // Sender's email and app-specific password
+        final String senderEmail = "your_email@example.com";
+        final String senderPassword = "your_password"; // Use an app-specific password if required
+
+        // Recipient's email
+        String recipientEmail = "recipient_email@example.com";
+
+        // Subject of the email
+        String subject = "Subject: Here is your file";
+
+        // Body of the email
+        String bodyText = "Hello,\n\nPlease find the attached text file.\n\nRegards,\nYour Name";
+
+        // File to attach
+        String filePath = "ids.txt"; // Ensure this file exists
+
+        // Email server properties
+        Properties properties = new Properties();
+        properties.put("mail.smtp.host", "smtp.gmail.com");
+        properties.put("mail.smtp.port", "587");
+        properties.put("mail.smtp.auth", "true");
+        properties.put("mail.smtp.starttls.enable", "true");
+
+        // Create a session with authentication
+        Session session = Session.getInstance(properties, new Authenticator() {
+            @Override
+            protected PasswordAuthentication getPasswordAuthentication() {
+                return new PasswordAuthentication(senderEmail, senderPassword);
+            }
+        });
+
+        try {
+            // Create a new email message
+            MimeMessage message = new MimeMessage(session);
+            message.setFrom(new InternetAddress(senderEmail));
+            message.addRecipient(Message.RecipientType.TO, new InternetAddress(recipientEmail));
+            message.setSubject(subject);
+
+            // Create a multipart message for attachment
+            Multipart multipart = new MimeMultipart();
+
+            // Add text body part
+            MimeBodyPart textBodyPart = new MimeBodyPart();
+            textBodyPart.setText(bodyText);
+            multipart.addBodyPart(textBodyPart);
+
+            // Add attachment body part
+            MimeBodyPart attachmentBodyPart = new MimeBodyPart();
+            attachmentBodyPart.attachFile(new File(filePath)); // Attach the file
+            multipart.addBodyPart(attachmentBodyPart);
+
+            // Set the complete message parts
+            message.setContent(multipart);
+
+            // Send the email
+            Transport.send(message);
+            System.out.println("Email sent successfully with the attachment.");
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+}
+
+########################################################################################################
+
+
+
 import java.util.Arrays;
 import java.util.List;
 
