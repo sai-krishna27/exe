@@ -1,11 +1,1 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" 
-                  xmlns:ns="http://example.com/yourapi">
-   <soapenv:Header/>
-   <soapenv:Body>
-      <ns:GetOrdersRequest>
-         <ns:SortBy>Date</ns:SortBy>
-         <ns:SortOrder>DESC</ns:SortOrder>
-      </ns:GetOrdersRequest>
-   </soapenv:Body>
-</soapenv:Envelope>
+    Optional<Customer> findTopByCategoryOrderByDateDesc(String category);
