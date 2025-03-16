@@ -1,1 +1,29 @@
-spring.cloud.task.initialize-enabled=false
+
+import java.io.File;
+import java.io.IOException;
+import java.nio.file.Files;
+import java.util.Base64;
+
+public class PtxToBase64Converter {
+    public static void main(String[] args) {
+        String filePath = "path/to/your/file.ptx"; // Replace with your file path
+        try {
+            File file = new File(filePath);
+            byte[] fileContent = Files.readAllBytes(file.toPath());
+            String base64Encoded = Base64.getEncoder().encodeToString(fileContent);
+            
+            System.out.println("Base64 Encoded String:");
+            System.out.println(base64Encoded);
+        } catch (IOException e) {
+            System.err.println("Error reading the file: " + e.getMessage());
+        }
+    }
+}
+
+Explanation
+Files.readAllBytes(): Efficiently reads the entire file content as a byte array.
+Base64.getEncoder().encodeToString(): Encodes the byte array into a Base64 string.
+Wrap the code in a try-catch block to handle IOException in case the file is missing or unreadable.
+Additional Considerations
+If the .ptx file is large, consider using Files.newInputStream() with a Base64.Encoder wrapped in a BufferedOutputStream for better memory efficiency.
+For web transmission or storage, consider adding appropriate headers or delimiters for the encoded string.
