@@ -1,0 +1,122 @@
+1. Introduction (5 mins)
+
+Ask the candidate to briefly walk through their career journey focusing on key projects and technologies used.
+
+Look for clarity, domain variety, and role evolution from execution to leadership.
+
+2. Core Automation Testing (Selenium) – 15 mins
+
+Q1. How do you design a Selenium test automation framework from scratch?
+Expected Answer:
+
+Framework type: Hybrid / Data-driven / Page Object Model.
+
+Layer separation (Test scripts, Page classes, Utilities).
+
+Use of TestNG/JUnit, logging (Log4j/SLF4J), reporting (Extent/Allure).
+
+Reusability, maintainability, parameterization (via config or Excel/CSV).
+
+Q2. How would you handle dynamic web elements in Selenium?
+Expected Answer:
+
+Dynamic XPath/CSS selectors.
+
+Using contains, starts-with, normalize-space.
+
+Waiting strategies (explicit waits with ExpectedConditions).
+
+Use of JavaScript Executor if necessary.
+
+Q3. Difference between findElement and findElements in Selenium.
+Expected Answer:
+
+findElement → returns first matching element, throws NoSuchElementException if none found.
+
+findElements → returns a list, returns empty list if none found.
+
+3. API Testing (Rest Assured / Postman) – 10 mins
+
+Q4. How do you validate a JSON API response in Rest Assured?
+Expected Answer:
+
+given().when().get(url).then().statusCode(200).body("key", equalTo(value))
+
+JSONPath queries.
+
+Schema validation with JSON schema files.
+
+Q5. How do you handle authentication in API automation?
+Expected Answer:
+
+Basic Auth, OAuth2, Bearer tokens.
+
+Storing tokens dynamically and reusing.
+
+Handling token refresh logic in framework.
+
+4. Mobile Testing (Appium) – 10 mins
+
+Q6. How do you identify mobile elements in Appium for iOS vs Android?
+Expected Answer:
+
+Android → uiautomatorviewer / Appium Inspector, resource-id, content-desc.
+
+iOS → Accessibility Ids, XCUITest locators.
+
+Q7. Difference between testing on emulator/simulator and real device.
+Expected Answer:
+
+Simulator (iOS) / Emulator (Android) mimic OS behavior but may not reflect hardware features like camera, GPS fully.
+
+Real device gives accurate performance, hardware interaction, network conditions.
+
+5. Process & Tools – 10 mins
+
+Q8. How have you used Jenkins in your testing process?
+Expected Answer:
+
+Scheduling nightly regression.
+
+Triggering automation after code commit (CI/CD).
+
+Configuring jobs with parameters.
+
+Integrating reports with Jenkins dashboard.
+
+Q9. How do you handle defects in Jira or QTest?
+Expected Answer:
+
+Logging defects with steps, screenshots, severity/priority.
+
+Linking test cases to defects.
+
+Following defect life cycle (New → Open → Fixed → Retest → Closed).
+
+6. Scenario-Based Problem Solving – 10 mins
+
+Q10. You have a web app where the UI changes frequently — how would you design automation to be resilient?
+Expected Answer:
+
+Use Page Object Model + descriptive locators.
+
+Externalize locators to config.
+
+Implement retry/wait logic.
+
+Regular locator review cycle with developers.
+
+Q11. If a Salesforce application has many dynamic dropdowns, how would you automate validation?
+Expected Answer:
+
+Use Salesforce-specific locators (lightning components).
+
+Wait for DOM stability.
+
+Fetch options list, compare with expected data from API/DB.
+
+7. Wrap-Up & Soft Skills Check (5 mins)
+
+Ask about a challenging bug they found in production and how they handled it.
+
+Look for analytical thinking, communication clarity, and ownership.

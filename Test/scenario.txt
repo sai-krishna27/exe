@@ -1,0 +1,26 @@
+Your team has an e-commerce web application. The product listing page loads 50 products at a time, and as you scroll down, it loads the next 50 using an API call (/getProducts). The UI design changes frequently because of A/B testing, and the development team often updates CSS classes and element IDs without prior notice.
+
+Question:
+How would you design an automation approach so that your Selenium scripts:
+
+Keep working even when element locators change.
+
+Verify both UI data and API response are consistent.
+
+Avoid excessive script maintenance effort.
+
+What you’d expect from a good candidate:
+
+Use of Page Object Model (or Page Factory) to centralize locators.
+
+Locator strategies based on stable attributes (e.g., aria-label, text-based locators) instead of fragile CSS classes.
+
+Externalization of locators into a config/properties file for quick updates.
+
+Integration of API validation with Rest Assured to compare backend API response with what’s displayed on the UI.
+
+Use of waits (explicit waits for dynamic loading).
+
+Possibly suggest service layer testing first to reduce UI dependency.
+
+Scheduling smoke tests in Jenkins to detect UI breaks early.

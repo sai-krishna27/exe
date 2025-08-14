@@ -1,0 +1,41 @@
+Rest Assured
+
+Purpose: Java library for automating and testing RESTful APIs.
+
+Key Features:
+
+Easy syntax for sending HTTP requests (GET, POST, PUT, DELETE).
+
+Built-in support for validating JSON and XML responses.
+
+Integration with testing frameworks like JUnit and TestNG.
+
+Example Use Case: Testing if an API returns the correct HTTP status code and data after a POST request.
+
+2. Appium
+
+Purpose: Open-source automation tool for testing mobile applications (Android & iOS).
+
+Key Features:
+
+Supports native, hybrid, and mobile web apps.
+
+Uses WebDriver protocol, so you can write tests in multiple languages (Java, Python, JS, etc.).
+
+Can run tests on real devices, emulators, and simulators.
+
+Example Use Case: Automating login functionality for an iOS banking app.
+
+3. Xcode
+
+Purpose: Apple’s official IDE for macOS, used to build apps for iOS, iPadOS, macOS, watchOS, and tvOS.
+
+Key Features:
+
+Comes with Interface Builder for designing UI visually.
+
+Integrated tools for coding (Swift, Objective-C), debugging, and performance profiling.
+
+Includes iOS Simulator for testing apps without a real device.
+
+Example Use Case: Developing and debugging an iOS app for the App Store.

@@ -1,0 +1,49 @@
+An SDET (Software Development Engineer in Test) is basically a hybrid between a developer and a tester — someone who not only verifies software quality but also builds the tools, frameworks, and automation needed to do that efficiently.
+
+Here’s the breakdown:
+
+Role of an SDET in IT
+
+Primary Goal: Ensure high-quality software delivery by combining coding skills with strong testing expertise.
+
+Mindset: Think like a developer (write maintainable, efficient code) and a tester (anticipate where bugs hide).
+
+Scope: Works across functional testing, automation, API testing, performance, and sometimes even DevOps integration.
+
+What an SDET Does
+
+Test Automation Development
+
+Design and build automation frameworks (UI, API, mobile, database).
+
+Write and maintain automated test scripts in languages like Java, Python, C#, or JavaScript.
+
+Integrate automation into CI/CD pipelines (Jenkins, GitLab CI, Azure DevOps).
+
+API & Backend Validation
+
+Use tools like Rest Assured, Postman, or custom scripts to test REST/SOAP APIs.
+
+Verify data integrity by querying databases (SQL/NoSQL).
+
+Performance & Scalability Testing
+
+Use tools like JMeter, Gatling to test system performance under load.
+
+Test Strategy & Planning
+
+Work with developers and product teams to define test coverage, edge cases, and acceptance criteria early in the SDLC.
+
+Shift-Left Testing
+
+Participate in code reviews, suggest testability improvements, and write unit/integration tests alongside developers.
+
+Defect Prevention & Debugging
+
+Investigate failures, analyze logs, and even debug application code to find the root cause.
+
+Tool & Process Improvement
+
+Create custom utilities for data setup, mock services, or report generation.
+
+Optimize existing test frameworks to reduce execution time.

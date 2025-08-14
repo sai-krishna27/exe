@@ -1,0 +1,193 @@
+Pranay Lakkam
+Test Automation Engineer
+E-mail: kumarpranay596@gmail.com
+Mobile: +91- 9739336036				
+Professional Summary:
+•	Having 10 + years of Experience in Manual testing and Automation Testing with selenium. Experience in Web-based application testing, Mobile Web Browsers (Safari, Chrome), Salesforce Application, Native Applications. Mock Testing, API Testing, Experience in Jira and QTest as defect tracking tool and Test Management Tool.Proficient in all phases of Test Life Cycle from test planning to defect tracking and managing defect lifecycle. Having a good knowledge on scheduling jobs in Jenkins, Firm knowledge of different phases of Software Testing and Software Development Life Cycle (SDLC) including Agile Methodology. Participated in Production release.
+
+TECHNICAL SKILLS
+     Testing Tools: Selenium, Web driver, DB Tester, Postman, Mock, Rest Assured, Appium, XCode.
+     Defect Tracking Tools: Jira.
+     Test Management Tools: MTM, TFS, QTest
+     Test Development Tools: Eclipse. Intellij
+     Programming Languages: Java
+
+Client: JPMC 	
+Role: Test Automation Engineer
+Project Name: JPMC SDAI Automation Testing 
+Software: Selenium, Web driver, Cucumber, Jenkins, Bit Bucket, UDF, MOCK
+Duration: SEPT 2024 to Till Date
+Responsibilities:
+
+•	Gathering the test cases from the Client team and Analyzing test cases reaching them when required and getting cleared all the Functionality related Question  
+•	Customized the framework according to the Requirement of the application.
+•	Preparing the Test data for the application under test.
+•	Automated all the test cases, on the priority basis using Cucumber Framework,
+•	Extensively used Selenium automation for Functional testing and Regression testing.
+•	Involved in the daily standup meeting.
+•	Ensure test systems problems are reported immediately and followed up.
+•	Responsible for the delivery of the reports to the Client as part of Daily Activity for the Automation testing.
+•	Maintained the result of the entire test suite and updated them for review.
+
+Client:  JPMC
+Role: Test Automation Engineer
+Project Name: JPMC CCC USWM SDAI – Initiative 2 & 5 
+Software: DB Tester, Mainframes
+Duration: Feb 2024 to Aug 2024
+Responsibilities
+
+•	Analysis of the requirements.
+•	Involved in deriving the Test Scenarios and designing the manual test cases.
+•	Involved in functional study of the Application.
+•	Understanding requirement and then identifying scenarios.
+•	Involved in deriving the Test Scenarios and designing the manual test cases.
+•	Write/review/execute test cases.
+
+Client: JPMC
+Role: Test Automation Engineer
+Project Name: 	JPMC CBC Digital Authentication Automation Testing 
+Software: Selenium, Web driver, Cucumber, Jenkins, Bit Bucket
+Duration: Jan 2023 to Dec-2023
+Responsibilities:
+•	Gathering the test cases from the Client team and Analyzing test cases  reaching them when required and getting cleared all the Functionality related Question  
+•	Customized the framework according to the Requirement of the application.
+•	Preparing the Test data for the application under test.
+•	Automated all the test cases, on the priority basis using Cucumber Framework,
+•	Extensively used Selenium automation for Functional testing and Regression testing.
+•	Involved in the daily standup meeting.
+•	Ensure test systems problems are reported immediately and followed up.
+•	Responsible for the delivery of the reports to the Client as part of Daily Activity for the Automation testing.
+•	Maintained the result of the entire test suite and updated them for review
+
+Client: Visible
+Role: Test Automation Engineer 
+Project Name: Visible
+Software: Selenium, Web driver, Cucumber, Jenkins, Gitlab
+Duration: April 2021 – Nov-2022
+Responsibilities:
+
+•	Analyzing the requirements and designing the clarifications document.
+•	Gathering the test cases from the manual team, 
+•	Customized the framework according to the Requirement of the application.
+•	Preparing the Test data for the application under test.
+•	Customized the xpath dynamically using fire path.
+•	Automated all the test cases, on the priority basis using Cucumber Framework,
+•	Extensively used Selenium automation for Functional testing and Regression testing.
+•	Preparation and maintenance of Test Data.
+•	Matching the execution speed of selenium with the application under test using implicitly wait statements.
+•	Involved in the daily standup meeting.
+•	Ensure test systems problems are reported immediately and followed up.
+•	Responsible for the delivery of the reports to the Client as part of Daily Activity for the Automation testing.
+•	Maintained the result of all the test suite and updated them for review.
+•	Used Git hub as the solution Explorer to run the test suite.
+
+Client: Kodecorp Technology Solutions PVT LTD
+Role: Test Automation Engineer 
+Project Name: Skybitz
+Software: Selenium, windows 7, TFS and Jira
+Duration: Feb 2019 – March-2021
+Responsibilities:
+
+•	Responsible for the Scheduling the work for team and managing the team.
+•	Analyzing the requirements and designing the clarifications document.
+•	Gathering the test cases from the manual team, 
+•	Customized the framework according to the Requirement of the application.
+•	Preparing the Test data for the application under test.
+•	Customized the xpath dynamically using fire path.
+•	Automated all the test cases, on the priority basis using Testng Framework,
+•	Imported the data from the excel Sheet as the test data for the application.
+•	Extensively used Selenium automation for Functional testing and Regression testing.
+•	Preparation and maintenance of Test Data.
+•	Matching the execution speed of selenium with the application under test using implicitly wait statements.
+•	Developed properties file to store X paths of the object.
+•	Involved in the daily standup meeting.
+•	Ensure test systems problems are reported immediately and followed up.
+•	Responsible for the delivery of the reports to the Client as part of Daily Activity for the Automation testing.
+•	Maintained the result of all the test suite and updated them for review.
+•	Used GitHub as the solution Explorer to run the test suite.
+
+Client: FUEL CLEARING HOUSE
+Role: Test Automation Engineer
+Project Name: 	FUEL CLEARING HOUSE
+Software: Selenium, windows 7, TFS and Jira
+Duration: Dec 2017 – Feb 2019
+Responsibilities:
+
+•	Analysis of the requirements.
+•	Involved in deriving the Test Scenarios and designing the manual test cases.
+•	Involved in functional study of the Application.
+•	Understanding requirement and then identifying scenarios.
+•	Involved in deriving the Test Scenarios and designing the manual test cases.
+•	Write/review/execute test cases.
+•	Performing functional testing, Regression Testing and Smoke Testing
+•	Testing of the application before delivery
+•	Navigational testing of the hyperlinks provided.
+•	Tracking Bugs using MTM and TFS.
+•	Verify and validate defect fixes.
+•	Involved in the preparation of End of Test report, Weekly status reports.
+•	Attending daily standup meetings.
+
+Client: Kodecorp Technology Solutions PVT LTD
+Role: Test Automation Engineer
+Project Name: Nithya Foundation
+Software: Selenium, windows 7, TFS and Jira
+Duration: July 2017 – Nov 2017
+Responsibilities:
+
+•	Responsible for the Scheduling work for team and managing the team.
+•	Responsible for leading the manual and Automation Team.
+•	Analyzing the requirements and designing the clarifications document.
+•	Customized the framework according to the Requirement of the application.
+•	Automated all the test cases, on the priority basis using testing Framework.
+•	Customized the xpath dynamically using fire path.
+•	Imported the data from the excel Sheet as the test data for the application.
+•	Extensively used Selenium automation for Functional testing and Regression testing.
+•	Involved in the Preparation and maintains of Test Data.
+•	Used Blaze Meter for performance and Load testing on the application.
+•	Updating the result of and status of the Project in daily stand up meetings
+•	Involved in the Scrum Meeting.
+•	Responsible for the delivery of the reports to the Client as part of Daily Activity for the Automation testing.
+•	Maintained the result of all the test suite and updated them for review.
+•	Used Git hub as the solution Explorer to run the test suite.
+
+Client: Allianz Cornhill Information Services
+Role: Test Automation Engineer
+Project Name: EQUINE
+Software: TFS and MTM, JIRA.
+Duration: SEPT 2016 – Nov 2017.
+Responsibilities:
+•	Analysis of the requirements.
+•	Involved in deriving the Test Scenarios and designing the manual test cases.
+•	Involved in functional study of the Application.
+•	Understanding requirement and then identifying scenarios.
+•	Involved in deriving the Test Scenarios and designing the manual test cases.
+•	Write/review/execute test cases.
+•	Performing functional testing, Regression Testing and Smoke Testing
+•	Testing of the application before delivery
+•	Navigational testing of the hyperlinks provided.
+•	Tracking Bugs using MTM and TFS.
+•	Verify and validate defect fixes.
+•	Involved in the preparation of End of Test report, Weekly status reports.
+•	Attending daily standup meetings.
+
+Client: IDEN SOLUTIONS (India) Private Limited
+Role: Test Automation Engineer 
+Project Name: YELLOWCABS
+Software: Selenium, windows 7, Java, J2EE TFS and MTM
+Duration: Dec 2015 – Aug 2016
+Responsibilities:
+•	Analysis of the requirements.
+•	Involved in deriving the Test Scenarios and designing the manual test cases.
+•	Involved in functional study of the Application.
+•	Understanding requirement and then identifying scenarios.
+•	Involved in deriving the Test Scenarios and designing the manual test cases.
+•	Write/review/execute test cases.
+•	Performing functional testing, Regression Testing and Smoke Testing
+•	Testing of the application before delivery
+•	Navigational testing of the hyperlinks provided.
+•	Tracking Bugs using MTM and TFS.
+•	Verify and validate defect fixes.
+•	Involved in the preparation of End of Test report, Weekly status reports.
+•	Attending daily standup meetings.
+Education: B.Tech Jawaharlal Nehru Technology University - 2013
+
