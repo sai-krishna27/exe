@@ -1,24 +1,80 @@
-26pow0+26
-26pow2*3+26pow1+26
+i am getting different scores in python and java
 
-26pow(n-1)*place+26pow(n-2)*place-------
+That’s a really good question 👍.
+It’s **very common** to see different scores between **Python (e.g., scikit-learn + sklearn2pmml)** and **Java (JPMML Evaluator)**.
+This usually isn’t because the PMML is wrong — it’s because of **differences in preprocessing, data type handling, or default configurations**.
 
+---
 
-long sum=0;
-        Map<Character,Integer> position=new HashMap(){{
-            put('A',1);put('B',2);put('C',3);put('D',4);put('E',5);put('F',6);put('G',7);put('H',8);put('I',9);put('J',10);put('K',11);put('L',12);put('M',13);put('N',14);put('O',15);put('P',16);put('Q',17);put('R',18);put('S',19);put('T',20);put('U',21);put('V',22);put('W',23);put('X',24);put('Y',25);put('Z',26);
+## 🔎 Common Reasons for Score Differences (Python vs Java PMML)
 
-        }};
-        
-        int i=str.length()-1;
-        for(int j=0;j<str.length();j++){
-            sum+=Math.pow(26,i)*position.get(str.charAt(j));
-            i--;
-        }
-        return sum;
+1. **Input Data Preprocessing**
 
+   * If you used `StandardScaler`, `OneHotEncoder`, `MinMaxScaler`, etc. in Python, make sure those preprocessing steps are exported into the PMML file.
+   * If preprocessing is missing in PMML, Python is scaling/encoding but Java isn’t.
 
-1
-QNUEAQCAQFTZ
-64487272650303696
-64487272650303698
+2. **Categorical Encoding**
+
+   * Python may treat `"Male"` and `"male"` differently, or trim spaces.
+   * JPMML is **case-sensitive** and strict about matching category values.
+
+3. **Data Types**
+
+   * In Python, `int` vs `float` may not matter much.
+   * In PMML/Java, passing `35` instead of `35.0` can cause subtle differences.
+   * Always pass values as the correct **field type** (numeric, categorical, string).
+
+4. **Default Values / Missing Values**
+
+   * Python model might handle `NaN` in a custom way.
+   * JPMML uses **missing value treatment** defined in PMML (eg. `"asMean"`, `"asMode"`).
+   * If not defined, Java may output different results.
+
+5. **Different Library Versions**
+
+   * If you exported with `sklearn2pmml` (or Nyoka) from Python, check compatibility with the **JPMML version**. Sometimes schema differences cause evaluation mismatches.
+
+---
+
+## ✅ Debugging Strategy
+
+1. **Check Input Alignment**
+
+   * Print the exact input features you pass in **Python** and compare them with what you send to **Java**.
+   * Even a single `float vs int` or category case mismatch can change predictions.
+
+2. **Inspect PMML**
+
+   * Open the PMML file in a text editor and look for:
+
+     * `<MiningSchema>` → required fields
+     * `<DataDictionary>` → data types
+     * `<TransformationDictionary>` → preprocessing rules
+
+   Make sure everything from Python preprocessing is present.
+
+3. **Evaluate Same Data in Both**
+
+   * Take **one record**, log the **exact values** in Python before scoring, then feed those into JPMML Java.
+   * Compare intermediate outputs if possible (e.g., probabilities).
+
+4. **Force Consistent Types in Java**
+
+   ```java
+   arguments.put(new FieldName("age"), Double.valueOf(35));  // not int
+   arguments.put(new FieldName("income"), Double.valueOf(50000));
+   arguments.put(new FieldName("gender"), "male");
+   ```
+
+---
+
+## 🔧 Next Step
+
+If you share:
+
+* A sample **Python score** (input + output),
+* The corresponding **Java score** for the same input,
+
+…I can help you pinpoint *exactly* where the mismatch is (preprocessing, type handling, or category encoding).
+
+👉 Do you want to paste me **one sample record** with Python vs Java output so I can trace the difference?
